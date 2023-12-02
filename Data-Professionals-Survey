@@ -1,1 +1,41 @@
+# Data Professionals Survey Dashboard Report
+1.	Problem Statement
+I want to understand how difficult it is to break into data.
+2.	Goal
+To develop a dashboard that can present insights into data
+3.	Data Gathering
+I started gathering a dataset related to data professional survey from GitHub. I downloaded the dataset in its raw format. The dataset has 28 fields and 630 records.
+4.	Questions 
+a.	What is the total number of survey takers in the dataset?
+b.	What is the average age of survey takers?
+c.	What is the favourite programming language by title?
+d.	Which position has the highest pay?
+e.	How difficult is to break into tech?
+f.	How does survey takers vary across different regions?
+g.	What is the average satisfaction rate on work/life balance?
+h.	How does title vary by average salary?
+
+5.	Data Cleaning
+To begin the data cleaning process, I started looking over the data to understand and see any duplicates, null values, spelling errors, and inconsistent data values. Then, I imported the data to the Power BI to transform it using power query. After that I did the following steps to clean/transform the data:
+a.	I started removing/deleting columns that are not helpful for data visualization such as email, browser, OS, City, Country, Referrer columns.
+b.	To make the data visualization easier on the current role, industry, country, and programming language  columns, I used split column to make the “Other” part as simple as possible [Home -> Split Columns -> Enter/Select delimiter].
+c.	I would like to do analysis based on a yearly average salary. To do this, I had the duplicate of the yearly salary column, used split column by digit,  and replace values such as the “K” & “-“ from the split column[Home -> Split Columns -> Enter/Select delimiter & Select column -> Replace Values ->Value to find/Replace with].
+d.	Then, I added a custom column as “Average salary” to find the average salary from the two newly created columns by adding the column values on the formula space provided and divided them by two [ Add column -> Custom column].
+The main aim of the data transformation is to ensure data accuracy, consistency, and usability for further analysis and visualization tasks.
+
+
+
+6.	Data Visualization
+After the data transformation, I created visual representations by selecting appropriate chart type to present insights and trends in a visually appealing manner based on the above questions using Power BI. Then, an interactive dashboard was created to aid quick analysis and identify important patterns.
+Key Insights:
+•	The number of  survey takers was 630.
+•	The average age of the survey takers was 29.9.
+•	Data Scientist had the highest paying job by average salary .
+•	Most of the survey takers are from the United States. 
+•	Data Professionals are not satisfied with the yearly salary.
+•	The work life/balance is 5.7 out of 10.
+•	43% of the data professionals said it is neither difficult nor easy
+These insights will provide valuable information for decision-making for those who want to break into data.
+
+*N.B:  The Power BI project focused on analysing of data professionals survey data to provide insights using Power BI, Power Query functions, formulas, and charts. It was a guided project, and it enhanced my understanding of Power BI functionalities, data transformation  techniques, and data visualization capabilities to drive effective business decisions.  
 
